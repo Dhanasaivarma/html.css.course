@@ -1,0 +1,70 @@
+<html>
+    
+
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
+
+    
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    
+    
+    h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Style for labels and inputs */
+    button, input {
+        margin-bottom: 10px;
+        padding: 5px;
+
+    }
+    input[type="phoneno"] {
+        background-color:white;
+        color: white;
+        border-radius: 2px;
+        
+        cursor: pointer;
+    }
+
+    input[type="submit"] {
+        background-color: #ff0000;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    
+    
+    form > * {
+        margin-bottom: 10px;
+    }
+    </style>
+    <head>
+        <center><h3>sign up page</h3></center>
+    </head>
+    <form method="GET" action="/signup">
+        <button>full name:</button>
+            <input type="text" name="fullname">
+        
+        <button>email id:</button>
+        <input type="text" name="email">
+        <button>password:</button>
+        <input type="password" name="password">
+        <button>phoneno</button>
+        <input type="phoneno" name="phoneno">
+        <input type="submit" >
+    
+    </form>
+    </html>
